@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="employee.css" />
+    <title>Employee</title>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        class="hdimg"
+        src="https://awsimages.detik.net.id/community/media/visual/2022/03/15/kenapa-logo-halal-diganti-ada-perpindahan-wewenang-dari-mui-ke-kemenag.jpeg?w=700&q=90"
+        alt=""
+      />
+      <h1>BACTH 7</h1>
+    </div>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="Employee.html">Employee</a>
+    </div>
+    <h2>Employee</h2>
+    <hr />
+    <form method="put" onsubmit="return editData();">
+      <div class="row">
+        <div class="column">
+          <table>
+            <tr>
+              <td>
+                <label class="labelfs" for="First_Name">First Name</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="First_Name"
+                  id="firstName"
+                  placeholder="Masukkan First Name"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="column">
+          <table>
+            <tr>
+              <td>
+                <label class="labells" for="Last_Name">Last Name</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="LastName"
+                  id="lastName"
+                  placeholder="Masukkan Last Name"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <table>
+            <tr>
+              <td>
+                <label class="labelemail" for="email">Email</label>
+              </td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Masukkan Email"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="column">
+          <table>
+            <tr>
+              <td>
+                <label class="labelph" for="phone_number">Phone Number</label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  name="phone_number"
+                  id="phoneNumber"
+                  placeholder="Masukkan Nomor"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <table>
+            <tr>
+              <td><label class="labelhd" for="Hire_Date">Hire Date</label></td>
+              <td>
+                <input
+                  type="date"
+                  name="Hire_Date"
+                  id="hireDate"
+                  placeholder="Masukkan Tanggal"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="column">
+          <table>
+            <td>
+              <tr>
+                <label class="labeljob" for="Job">Job</label>
+              </tr>
+              <tr>
+                <select name="job" id="jobId">
+                  <option value="IT_PROG">IT_PROG</option>
+                  <option value="FI_ACCOUNT">FI_ACCOUNT</option>
+                  <option value="AC_ACCOUNT">AC_ACCOUNT</option>
+                  <option value="SA_MAN">SA_MAN</option>
+                </select>
+              </tr>
+            </td>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <table>
+            <tr>
+              <td>
+                <label class="labelcom" for="Commission">Commission</label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  name="Commission"
+                  id="commissionPct"
+                  placeholder="Masukkan Commission"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="column">
+          <table>
+            <tr>
+              <td><label class="labelsal" for="Salary">Salary</label></td>
+              <td><input type="number" id="salary" name="Salary" /></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <input
+        class="button"
+        type="submit"
+        value="submit"
+      />
+    </form>
+    </footer>
+  </body>
+  <script src="senddata.js"></script>
+</html>
